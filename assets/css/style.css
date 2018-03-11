@@ -1,0 +1,24 @@
+.jumbotron {
+	background-color: teal; 
+	color: white; 
+	font-family: "Georgia;"
+}
+
+.panel {
+	border-color: teal;
+}
+
+.panel-heading {
+	background-color: teal; 
+	border-color: none; 
+	font-family: "Georgia";
+}
+
+.table {
+	font-family: "Georgia";
+}
+
+#user-input {
+	background-color: teal;  
+	color: white;
+}

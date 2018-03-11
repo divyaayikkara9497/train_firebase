@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Firebase: Train Schedule </title>
+	<!-- jQuery File -->
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<!-- Bootstrap Link -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+     <!--CSS file -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+
+	<div class="jumbotron bg-primary text-center">
+		<h1>Anytime is Train Time</h1>
+		<p> Choo Choo. Chee Chee </p>
+	</div>
+
+<div class="container">
+
+	<div class="row">
+		<div class="panel">
+			<div class="panel-heading">Current Train Schedule</div>
+				<table class="table" >
+					<thead> 
+						<tr>
+							<th scope="col" id="train-name">Train Name</th>
+      						<th scope="col" id="destination">Destination</th>
+      						<th scope="col" id="frequency">Frequency (min)</th>
+      						<th scope="col" id="next-arrival">Next arrival</th>
+      						<th scope="col" id="minutes-away">Minutes Away</th>
+      					</tr>
+ 					</thead>
+ 				</table>
+ 		</div>
+ 	</div>
+
+
+	<div class="row">
+		<div class="panel">
+			<div class="panel-heading">Add Train</div>
+			<div class="panel-body">
+				<form>
+					<div class="form-group">
+						<label style="font-family: Georgia;"> Train Name </label>
+						<br>
+						<input typle="text" class="form-control" id="name">
+					</div>
+					<div class="form-group">
+						<br>
+						<label style="font-family: Georgia;"> Destination </label>
+						<br>
+						<input type="text" class="form-control" id="place">
+					</div>
+					<div class="form-group">
+						<br>
+						<label style="font-family: Georgia;"> First Train Time (HH:mm - military time) </label>
+						<br>
+						<input type="text" class="form-control" id="time">
+					</div>
+					<div class="form-group">
+						<br>
+						<label style="font-family: Georgia;"> Frequency (limit)</label>
+						<br>
+						<input type="text" class="form-control" id="rate">
+					</div>
+					<div class="form-group">
+						<br>
+						<button class="btn" id="user-input" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="assets/javascript/train.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+</body>
+</html>
